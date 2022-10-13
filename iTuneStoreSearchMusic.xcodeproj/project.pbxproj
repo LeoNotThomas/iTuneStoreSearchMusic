@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		335F7DDE28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DDD28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift */; };
-		335F7DE028F5801D006E1529 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DDF28F5801D006E1529 /* ContentView.swift */; };
+		335F7DE028F5801D006E1529 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DDF28F5801D006E1529 /* SearchView.swift */; };
 		335F7DE228F5801F006E1529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335F7DE128F5801F006E1529 /* Assets.xcassets */; };
 		335F7DE528F5801F006E1529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335F7DE428F5801F006E1529 /* Preview Assets.xcassets */; };
 		335F7DEF28F5801F006E1529 /* iTuneStoreSearchMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DEE28F5801F006E1529 /* iTuneStoreSearchMusicTests.swift */; };
 		335F7DF928F5801F006E1529 /* iTuneStoreSearchMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DF828F5801F006E1529 /* iTuneStoreSearchMusicUITests.swift */; };
 		335F7DFB28F58020006E1529 /* iTuneStoreSearchMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7DFA28F58020006E1529 /* iTuneStoreSearchMusicUITestsLaunchTests.swift */; };
+		335F7E0928F583C2006E1529 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E0828F583C2006E1529 /* Tracks.swift */; };
+		335F7E0C28F58564006E1529 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E0B28F58564006E1529 /* APIRequest.swift */; };
+		335F7E0F28F585D5006E1529 /* Notifivation+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E0E28F585D5006E1529 /* Notifivation+Name.swift */; };
+		335F7E1128F5866E006E1529 /* SearchMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E1028F5866E006E1529 /* SearchMusicRequest.swift */; };
+		335F7E1428F58D1F006E1529 /* TrackLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E1328F58D1F006E1529 /* TrackLoader.swift */; };
+		335F7E1728F58D86006E1529 /* JSONDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E1628F58D86006E1529 /* JSONDecode.swift */; };
+		335F7E1A28F597FA006E1529 /* Maffay.json in Resources */ = {isa = PBXBuildFile; fileRef = 335F7E1928F597FA006E1529 /* Maffay.json */; };
+		335F7E1C28F685B2006E1529 /* MaffaySmall.json in Resources */ = {isa = PBXBuildFile; fileRef = 335F7E1B28F685B1006E1529 /* MaffaySmall.json */; };
+		335F7E1F28F6ACA1006E1529 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E1E28F6ACA1006E1529 /* Constants.swift */; };
+		335F7E2428F6BCEB006E1529 /* TracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2328F6BCEB006E1529 /* TracksViewModel.swift */; };
+		335F7E2628F71DED006E1529 /* Collor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2528F71DED006E1529 /* Collor+AppColor.swift */; };
+		335F7E2928F72ADE006E1529 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2828F72ADE006E1529 /* TrackListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		335F7DDA28F5801D006E1529 /* iTuneStoreSearchMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTuneStoreSearchMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335F7DDD28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneStoreSearchMusicApp.swift; sourceTree = "<group>"; };
-		335F7DDF28F5801D006E1529 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		335F7DDF28F5801D006E1529 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		335F7DE128F5801F006E1529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335F7DE428F5801F006E1529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		335F7DEA28F5801F006E1529 /* iTuneStoreSearchMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTuneStoreSearchMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,18 @@
 		335F7DF428F5801F006E1529 /* iTuneStoreSearchMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTuneStoreSearchMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		335F7DF828F5801F006E1529 /* iTuneStoreSearchMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneStoreSearchMusicUITests.swift; sourceTree = "<group>"; };
 		335F7DFA28F58020006E1529 /* iTuneStoreSearchMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneStoreSearchMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		335F7E0828F583C2006E1529 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		335F7E0B28F58564006E1529 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		335F7E0E28F585D5006E1529 /* Notifivation+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notifivation+Name.swift"; sourceTree = "<group>"; };
+		335F7E1028F5866E006E1529 /* SearchMusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicRequest.swift; sourceTree = "<group>"; };
+		335F7E1328F58D1F006E1529 /* TrackLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackLoader.swift; sourceTree = "<group>"; };
+		335F7E1628F58D86006E1529 /* JSONDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecode.swift; sourceTree = "<group>"; };
+		335F7E1928F597FA006E1529 /* Maffay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Maffay.json; sourceTree = "<group>"; };
+		335F7E1B28F685B1006E1529 /* MaffaySmall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MaffaySmall.json; sourceTree = "<group>"; };
+		335F7E1E28F6ACA1006E1529 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		335F7E2328F6BCEB006E1529 /* TracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModel.swift; sourceTree = "<group>"; };
+		335F7E2528F71DED006E1529 /* Collor+AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collor+AppColor.swift"; sourceTree = "<group>"; };
+		335F7E2828F72ADE006E1529 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +118,15 @@
 		335F7DDC28F5801D006E1529 /* iTuneStoreSearchMusic */ = {
 			isa = PBXGroup;
 			children = (
+				335F7E2728F72A9A006E1529 /* View */,
+				335F7E1D28F6AC89006E1529 /* Global */,
+				335F7E1528F58D72006E1529 /* Parser */,
+				335F7E1228F58C6B006E1529 /* Domain */,
+				335F7E0D28F5859B006E1529 /* Extensions */,
+				335F7E0728F58396006E1529 /* Model */,
+				335F7E2028F6BC05006E1529 /* ViewModel */,
+				335F7E0A28F58413006E1529 /* Network */,
 				335F7DDD28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift */,
-				335F7DDF28F5801D006E1529 /* ContentView.swift */,
 				335F7DE128F5801F006E1529 /* Assets.xcassets */,
 				335F7DE328F5801F006E1529 /* Preview Content */,
 			);
@@ -113,6 +144,7 @@
 		335F7DED28F5801F006E1529 /* iTuneStoreSearchMusicTests */ = {
 			isa = PBXGroup;
 			children = (
+				335F7E1828F597C7006E1529 /* Ressources */,
 				335F7DEE28F5801F006E1529 /* iTuneStoreSearchMusicTests.swift */,
 			);
 			path = iTuneStoreSearchMusicTests;
@@ -125,6 +157,82 @@
 				335F7DFA28F58020006E1529 /* iTuneStoreSearchMusicUITestsLaunchTests.swift */,
 			);
 			path = iTuneStoreSearchMusicUITests;
+			sourceTree = "<group>";
+		};
+		335F7E0728F58396006E1529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E0828F583C2006E1529 /* Tracks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		335F7E0A28F58413006E1529 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E0B28F58564006E1529 /* APIRequest.swift */,
+				335F7E1028F5866E006E1529 /* SearchMusicRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		335F7E0D28F5859B006E1529 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E0E28F585D5006E1529 /* Notifivation+Name.swift */,
+				335F7E2528F71DED006E1529 /* Collor+AppColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		335F7E1228F58C6B006E1529 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E1328F58D1F006E1529 /* TrackLoader.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		335F7E1528F58D72006E1529 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E1628F58D86006E1529 /* JSONDecode.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		335F7E1828F597C7006E1529 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E1928F597FA006E1529 /* Maffay.json */,
+				335F7E1B28F685B1006E1529 /* MaffaySmall.json */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		335F7E1D28F6AC89006E1529 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E1E28F6ACA1006E1529 /* Constants.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		335F7E2028F6BC05006E1529 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				335F7E2328F6BCEB006E1529 /* TracksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		335F7E2728F72A9A006E1529 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				335F7DDF28F5801D006E1529 /* SearchView.swift */,
+				335F7E2828F72ADE006E1529 /* TrackListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335F7E1A28F597FA006E1529 /* Maffay.json in Resources */,
+				335F7E1C28F685B2006E1529 /* MaffaySmall.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +367,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335F7DE028F5801D006E1529 /* ContentView.swift in Sources */,
+				335F7E0928F583C2006E1529 /* Tracks.swift in Sources */,
+				335F7E1728F58D86006E1529 /* JSONDecode.swift in Sources */,
+				335F7E1128F5866E006E1529 /* SearchMusicRequest.swift in Sources */,
+				335F7DE028F5801D006E1529 /* SearchView.swift in Sources */,
+				335F7E0C28F58564006E1529 /* APIRequest.swift in Sources */,
+				335F7E2628F71DED006E1529 /* Collor+AppColor.swift in Sources */,
+				335F7E1428F58D1F006E1529 /* TrackLoader.swift in Sources */,
 				335F7DDE28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift in Sources */,
+				335F7E0F28F585D5006E1529 /* Notifivation+Name.swift in Sources */,
+				335F7E2428F6BCEB006E1529 /* TracksViewModel.swift in Sources */,
+				335F7E2928F72ADE006E1529 /* TrackListView.swift in Sources */,
+				335F7E1F28F6ACA1006E1529 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +544,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +573,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
