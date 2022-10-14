@@ -26,6 +26,8 @@
 		335F7E2428F6BCEB006E1529 /* TracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2328F6BCEB006E1529 /* TracksViewModel.swift */; };
 		335F7E2628F71DED006E1529 /* Collor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2528F71DED006E1529 /* Collor+AppColor.swift */; };
 		335F7E2928F72ADE006E1529 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2828F72ADE006E1529 /* TrackListView.swift */; };
+		335F7E2B28F934B7006E1529 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2A28F934B7006E1529 /* TrackDetailView.swift */; };
+		335F7E2D28F9647B006E1529 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F7E2C28F9647B006E1529 /* CoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		335F7E2328F6BCEB006E1529 /* TracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModel.swift; sourceTree = "<group>"; };
 		335F7E2528F71DED006E1529 /* Collor+AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collor+AppColor.swift"; sourceTree = "<group>"; };
 		335F7E2828F72ADE006E1529 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
+		335F7E2A28F934B7006E1529 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
+		335F7E2C28F9647B006E1529 /* CoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 			children = (
 				335F7DDF28F5801D006E1529 /* SearchView.swift */,
 				335F7E2828F72ADE006E1529 /* TrackListView.swift */,
+				335F7E2A28F934B7006E1529 /* TrackDetailView.swift */,
+				335F7E2C28F9647B006E1529 /* CoverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,8 +378,10 @@
 				335F7E1128F5866E006E1529 /* SearchMusicRequest.swift in Sources */,
 				335F7DE028F5801D006E1529 /* SearchView.swift in Sources */,
 				335F7E0C28F58564006E1529 /* APIRequest.swift in Sources */,
+				335F7E2B28F934B7006E1529 /* TrackDetailView.swift in Sources */,
 				335F7E2628F71DED006E1529 /* Collor+AppColor.swift in Sources */,
 				335F7E1428F58D1F006E1529 /* TrackLoader.swift in Sources */,
+				335F7E2D28F9647B006E1529 /* CoverView.swift in Sources */,
 				335F7DDE28F5801D006E1529 /* iTuneStoreSearchMusicApp.swift in Sources */,
 				335F7E0F28F585D5006E1529 /* Notifivation+Name.swift in Sources */,
 				335F7E2428F6BCEB006E1529 /* TracksViewModel.swift in Sources */,

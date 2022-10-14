@@ -16,5 +16,12 @@ extension UIColor {
         static var navigationItem: UIColor {
             return .white
         }
+        
+        static func button(disabled: Bool = false) -> UIColor {
+            if disabled {
+                return .lightGray
+            }
+            return .blue
+        }
     }
 }

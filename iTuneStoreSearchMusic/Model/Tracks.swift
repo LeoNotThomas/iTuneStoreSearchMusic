@@ -58,44 +58,31 @@ struct Track: Codable {
     let collectionArtistName: String?
     let collectionArtistId: Int?
     let collectionArtistViewUrl: String?
-
-//    enum CodingKeys: String, CodingKey {
-//        case wrapperType, kind
-//        case artistId
-//        case collectionId
-//        case trackId
-//        case artistName, collectionName, trackName, collectionCensoredName, trackCensoredName
-//        case artistViewUrl
-//        case collectionViewUrl
-//        case trackViewUrl
-//        case previewUrl
-//        case artworkUrl30, artworkUrl60, artworkUrl100, collectionPrice, trackPrice, releaseDate, collectionExplicitness, trackExplicitness, discCount, discNumber, trackCount, trackNumber, trackTimeMillis, country, currency, primaryGenreName, isStreamable, collectionArtistName
-//        case collectionArtistId
-//        case collectionArtistViewUrl
-//    }
     
-    init(artistId: Int, trackId: Int, artistName: String) {
+    // this initiailize is primarily for tests, no reason to use this inside the main project
+    init(artistId: Int, trackId: Int, artistName: String, collectionName: String? = nil, trackViewUrl: String? = nil, releaseDate: Date? = nil, primaryGenreName: String? = nil) {
         self.artistId = artistId
         self.trackId = trackId
         self.artistName = artistName
+        self.collectionName = collectionName
+        self.trackViewUrl = trackViewUrl
+        self.releaseDate = releaseDate
+        self.primaryGenreName = primaryGenreName
         
         wrapperType = nil
         kind = nil
         collectionId = nil
-        collectionName = nil
         trackName = nil
         collectionCensoredName = nil
         trackCensoredName = nil
         artistViewUrl = nil
         collectionViewUrl = nil
-        trackViewUrl = nil
         previewUrl = nil
         artworkUrl30 = nil
         artworkUrl60 = nil
         artworkUrl100 = nil
         collectionPrice = nil
         trackPrice = nil
-        releaseDate = nil
         collectionExplicitness = nil
         trackExplicitness = nil
         discCount = nil
@@ -105,7 +92,6 @@ struct Track: Codable {
         trackTimeMillis = nil
         country = nil
         currency = nil
-        primaryGenreName = nil
         isStreamable = nil
         collectionArtistName = nil
         collectionArtistId = nil
@@ -113,6 +99,7 @@ struct Track: Codable {
     }
 }
 
+// would use this in the future, but getting errors and can find the case, must be a value, that not inside in the PrimaryGenreName
 enum PrimaryGenreName: String, Codable {
     case childrenSMusic = "Children's Music"
     case germanPop = "German Pop"

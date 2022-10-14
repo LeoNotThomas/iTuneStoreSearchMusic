@@ -111,11 +111,28 @@ struct TrackViewModel: Comparable {
     var releaseDate: Date? {
         return track.releaseDate
     }
-    var primaryGenreName: String? {
-        return track.primaryGenreName
+    var formatedReleaseDate: String {
+        if let date = releaseDate {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .long
+            formatter.timeStyle = .none
+            return formatter.string(from: date)
+        }
+        return "No Date available"
+    }
+    
+    var primaryGenreName: String {
+        return track.primaryGenreName != nil ? track.primaryGenreName! : "No Genre available"
     }
     var trackViewUrl: String? {
         return track.trackViewUrl
+    }
+    
+    var trackUrl: URL? {
+        guard let trackViewUrl = trackViewUrl else {
+            return nil
+        }
+        return URL(string: trackViewUrl)
     }
     
     typealias Cover = (width: CGFloat, height: CGFloat, url: URL?)

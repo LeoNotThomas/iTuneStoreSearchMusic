@@ -29,20 +29,11 @@ struct TrackListView: View {
             ProgressView()
         } else {
             List(viewModel.tracks, id: \.id) { track in
-                NavigationLink(destination: Text("Test")) {
+                NavigationLink(destination: TrackDetailView(track: track)) {
                     VStack(alignment: .leading) {
                         Text(track.artistName).bold()
                         HStack(alignment: .top) {
-                            let cover = track.coverMedium
-                            if let url = cover.url {
-                                AsyncImage(url: url, content: { image in
-                                    image.resizable()
-                                }, placeholder: {
-                                    ProgressView()
-                                }).frame(width: cover.width, height: cover.height)
-                            } else {
-                                Text("No Cover")
-                            }
+                            CoverView(track: track, type: .small)
                             VStack(alignment: .leading) {
                                 HStack(alignment: .top, spacing: 4) {
                                     Text("Song:")
