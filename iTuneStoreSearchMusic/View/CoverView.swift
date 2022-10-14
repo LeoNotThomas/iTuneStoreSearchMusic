@@ -19,9 +19,13 @@ struct CoverView: View {
     var body: some View {
         if let url = cover.url {
             AsyncImage(url: url) { coverImage in
-                coverImage.resizable()
+                coverImage
+                    .resizable()
+                    .scaledToFit()
             } placeholder: {
                 Image("NoCover")
+                    .resizable()
+                    .scaledToFit()
             }
             .frame(width: cover.width, height: cover.height)
         } else {
