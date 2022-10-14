@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TrackDetailView: View {
     @State var track: TrackViewModel
+    @State private var showingDetail = false
     var body: some View {
         VStack(alignment: .center) {
             VStack(alignment: .leading) {
@@ -19,12 +20,13 @@ struct TrackDetailView: View {
                         info(prefix: Prefix.released.rawValue, text: track.formatedReleaseDate)
                         info(prefix: Prefix.album.rawValue, text: track.collectionName)
                         info(prefix: Prefix.genre.rawValue, text: track.primaryGenreName)
+                        info(prefix: Prefix.title.rawValue, text: track.trackName)
                     }
                 }
             }
             Group{
                 Button(action: {
-                    print("tapped!")
+                    showingDetail.toggle()
                 }, label: {
                     Text("Link")
                         .foregroundColor(.white)
@@ -36,12 +38,16 @@ struct TrackDetailView: View {
                 .disabled(track.trackUrl == nil)
             }.frame(maxHeight: .infinity, alignment: .bottom)
         }.padding(4)
+            .sheet(isPresented: $showingDetail) {
+                TrackWebView(url: track.trackUrl!)
+            }
     }
     
     func info(prefix: String, text: String) -> some View {
         return HStack(alignment: .top) {
             Text("\(prefix):")
                 .bold()
+                .frame(width: 80, alignment: .trailing)
             Text("\(text)")
         }
     }
@@ -52,12 +58,13 @@ struct TrackDetailView: View {
         case album = "Album"
         case genre = "Genre"
         case released = "Released"
+        case title = "Title"
     }
 }
 
 struct TrackDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let track = Track(artistId: 1, trackId: 0, artistName: "testName", collectionName: "testCollectionName", trackViewUrl: "www.google.com", releaseDate: Date(), primaryGenreName: "testPrimaryGenreName")
+        let track = Track(artistId: 1, trackId: 0, artistName: "testName", collectionName: "testCollectionName", trackViewUrl: "www.google.com", releaseDate: Date(), primaryGenreName: "testPrimaryGenreName", trackName: "Lalelu")
         TrackDetailView(track: TrackViewModel(id: 0, track: track))
     }
 }

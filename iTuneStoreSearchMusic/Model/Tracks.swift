@@ -60,7 +60,7 @@ struct Track: Codable {
     let collectionArtistViewUrl: String?
     
     // this initiailize is primarily for tests, no reason to use this inside the main project
-    init(artistId: Int, trackId: Int, artistName: String, collectionName: String? = nil, trackViewUrl: String? = nil, releaseDate: Date? = nil, primaryGenreName: String? = nil) {
+    init(artistId: Int, trackId: Int, artistName: String, collectionName: String? = nil, trackViewUrl: String? = nil, releaseDate: Date? = nil, primaryGenreName: String? = nil, trackName: String? = nil) {
         self.artistId = artistId
         self.trackId = trackId
         self.artistName = artistName
@@ -68,11 +68,11 @@ struct Track: Codable {
         self.trackViewUrl = trackViewUrl
         self.releaseDate = releaseDate
         self.primaryGenreName = primaryGenreName
+        self.trackName = trackName
         
         wrapperType = nil
         kind = nil
         collectionId = nil
-        trackName = nil
         collectionCensoredName = nil
         trackCensoredName = nil
         artistViewUrl = nil

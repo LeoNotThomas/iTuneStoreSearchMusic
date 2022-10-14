@@ -36,7 +36,7 @@ struct TrackListView: View {
                             CoverView(track: track, type: .small)
                             VStack(alignment: .leading) {
                                 HStack(alignment: .top, spacing: 4) {
-                                    Text("Song:")
+                                    Text("Title:")
                                         .frame(width: 60, alignment: .leading)
                                     Text("\(track.trackName)")
                                 }
